@@ -55,6 +55,9 @@ ITERATION = sys.argv[2]
 XSECT_LEPS_DAT = sys.argv[3]
 XSECT_HEPS_DAT = sys.argv[4]
 
+# Important variables
+ntbins = 7 # number of tbins
+
 ################################################################################################################################################
 
 '''
@@ -143,7 +146,7 @@ t_central_values = np.sort(t_central_values)
 UnSep_Xsection_pdf = "%s/LTSEP_ANALYSIS/src/plots/%s_ProdCoin_Pion_Analysis_UnSep_xsection_iter%s_Distributions.pdf" % (REPLAYPATH, PHY_SETTING, ITERATION)
 
 # 2x3 grid, first subplot is for annotation/text
-fig_1, axs_1 = plt.subplots(2, 3, figsize=(20, 10))
+fig_1, axs_1 = plt.subplots(3, 3, figsize=(20, 20))
 axs_1 = axs_1.flatten()
 axs_1[0].axis('off')
 axs_1[0].text(
@@ -152,7 +155,7 @@ axs_1[0].text(
     transform=axs_1[0].transAxes
 )
 
-for idx, t_central in enumerate(t_central_values[:5]):
+for idx, t_central in enumerate(t_central_values[:ntbins]):
     ax = axs_1[idx + 1]
     df_t_low = xsect_loweps_df[xsect_loweps_df["t_central"] == t_central]
     df_t_high = xsect_higheps_df[xsect_higheps_df["t_central"] == t_central]
@@ -218,7 +221,7 @@ sigma_TT_list, sigma_TT_err_list = [], []
 t_plot_list = []
 
 # 2x3 grid, first subplot is for annotation/text
-fig_2, axs_2 = plt.subplots(2, 3, figsize=(20, 10))
+fig_2, axs_2 = plt.subplots(3, 3, figsize=(20, 20))
 axs_2 = axs_2.flatten()
 axs_2[0].axis('off')
 axs_2[0].text(
@@ -228,7 +231,7 @@ axs_2[0].text(
 )
 
 # --- Create 2x3 grid for main plots ---
-for idx, t_central in enumerate(t_central_values[:5]):
+for idx, t_central in enumerate(t_central_values[:ntbins]):
     ax = axs_2[idx + 1]
     df_t_low = xsect_loweps_df[xsect_loweps_df["t_central"] == t_central]
     df_t_high = xsect_higheps_df[xsect_higheps_df["t_central"] == t_central]
