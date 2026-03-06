@@ -138,6 +138,9 @@ Q2_val=$(echo "$Q2" | sed 's/Q\([0-9]\+\)p\([0-9]\+\)/\1\2/')
 if [[ "${PHY_SETTING_C}" == "Q3p85_W2p62_t0p21" ]]; then
     LOWEPS=292
     HIGHEPS=779
+elif [[ "${PHY_SETTING_C}" == "Q3p85_W2p02_t0p49" ]]; then
+    LOWEPS=580
+    HIGHEPS=888
 else
     echo "Need to update epsilon values for ${PHY_SETTING_C}"
 fi
