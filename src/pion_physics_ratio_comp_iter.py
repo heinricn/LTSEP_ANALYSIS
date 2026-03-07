@@ -2614,16 +2614,16 @@ H_dc_x_fp_pions_normdummysub_data_cut_all.GetXaxis().SetRangeUser(-50, 50)
 H_dc_x_fp_pions_normdummysub_data_cut_all.GetYaxis().CenterTitle()
 H_dc_x_fp_pions_normdummysub_data_cut_all.SetLineColor(ROOT.kBlue)
 H_dc_x_fp_pions_normdummysub_data_cut_all.SetMarkerColor(ROOT.kBlue)
- # Draw the histogram with the higher max first
- #H_hsxfp_pions_simc_cut_all.Scale(match_scale)
- H_hsxfp_pions_simc_cut_all.GetXaxis().SetRangeUser(-50, 50)
- H_hsxfp_pions_simc_cut_all.GetYaxis().CenterTitle()
- H_hsxfp_pions_simc_cut_all.SetLineColor(ROOT.kRed)
- H_hsxfp_pions_simc_cut_all.SetMarkerColor(ROOT.kRed)
- if H_hsxfp_pions_simc_cut_all.GetMaximum() > H_dc_x_fp_pions_normdummysub_data_cut_all.GetMaximum():
+# Draw the histogram with the higher max first
+#H_hsxfp_pions_simc_cut_all.Scale(match_scale)
+H_hsxfp_pions_simc_cut_all.GetXaxis().SetRangeUser(-50, 50)
+H_hsxfp_pions_simc_cut_all.GetYaxis().CenterTitle()
+H_hsxfp_pions_simc_cut_all.SetLineColor(ROOT.kRed)
+H_hsxfp_pions_simc_cut_all.SetMarkerColor(ROOT.kRed)
+if H_hsxfp_pions_simc_cut_all.GetMaximum() > H_dc_x_fp_pions_normdummysub_data_cut_all.GetMaximum():
      H_hsxfp_pions_simc_cut_all.Draw("E1")
      H_dc_x_fp_pions_normdummysub_data_cut_all.Draw("E1same")
- else:
+else:
      H_dc_x_fp_pions_normdummysub_data_cut_all.Draw("E1")
      H_hsxfp_pions_simc_cut_all.Draw("E1same")
 # Legend for HMS Xfp Plot
@@ -2636,16 +2636,16 @@ H_dc_y_fp_pions_normdummysub_data_cut_all.GetXaxis().SetRangeUser(-30, 30)
 H_dc_y_fp_pions_normdummysub_data_cut_all.GetYaxis().CenterTitle()
 H_dc_y_fp_pions_normdummysub_data_cut_all.SetLineColor(ROOT.kBlue)
 H_dc_y_fp_pions_normdummysub_data_cut_all.SetMarkerColor(ROOT.kBlue)
- # Draw the histogram with the higher max first
- #H_hsyfp_pions_simc_cut_all.Scale(match_scale)
- H_hsyfp_pions_simc_cut_all.GetXaxis().SetRangeUser(-30, 30)
- H_hsyfp_pions_simc_cut_all.GetYaxis().CenterTitle()
- H_hsyfp_pions_simc_cut_all.SetLineColor(ROOT.kRed)
- H_hsyfp_pions_simc_cut_all.SetMarkerColor(ROOT.kRed)
- if H_hsyfp_pions_simc_cut_all.GetMaximum() > H_dc_y_fp_pions_normdummysub_data_cut_all.GetMaximum():
+# Draw the histogram with the higher max first
+#H_hsyfp_pions_simc_cut_all.Scale(match_scale)
+H_hsyfp_pions_simc_cut_all.GetXaxis().SetRangeUser(-30, 30)
+H_hsyfp_pions_simc_cut_all.GetYaxis().CenterTitle()
+H_hsyfp_pions_simc_cut_all.SetLineColor(ROOT.kRed)
+H_hsyfp_pions_simc_cut_all.SetMarkerColor(ROOT.kRed)
+if H_hsyfp_pions_simc_cut_all.GetMaximum() > H_dc_y_fp_pions_normdummysub_data_cut_all.GetMaximum():
      H_hsyfp_pions_simc_cut_all.Draw("E1")
      H_dc_y_fp_pions_normdummysub_data_cut_all.Draw("E1same")
- else:
+else:
      H_dc_y_fp_pions_normdummysub_data_cut_all.Draw("E1")
      H_hsyfp_pions_simc_cut_all.Draw("E1same")
 # Legend for HMS Yfp Plot
@@ -2658,16 +2658,16 @@ H_dc_xp_fp_pions_normdummysub_data_cut_all.GetXaxis().SetRangeUser(-0.1, 0.1)
 H_dc_xp_fp_pions_normdummysub_data_cut_all.GetYaxis().CenterTitle()
 H_dc_xp_fp_pions_normdummysub_data_cut_all.SetLineColor(ROOT.kBlue)
 H_dc_xp_fp_pions_normdummysub_data_cut_all.SetMarkerColor(ROOT.kBlue)
- # Draw the histogram with the higher max first
- #H_hsxpfp_pions_simc_cut_all.Scale(match_scale)
- H_hsxpfp_pions_simc_cut_all.GetXaxis().SetRangeUser(-0.1, 0.1)
- H_hsxpfp_pions_simc_cut_all.GetYaxis().CenterTitle()
- H_hsxpfp_pions_simc_cut_all.SetLineColor(ROOT.kRed)
- H_hsxpfp_pions_simc_cut_all.SetMarkerColor(ROOT.kRed)
- if H_hsxpfp_pions_simc_cut_all.GetMaximum() > H_dc_xp_fp_pions_normdummysub_data_cut_all.GetMaximum():
+# Draw the histogram with the higher max first
+#H_hsxpfp_pions_simc_cut_all.Scale(match_scale)
+H_hsxpfp_pions_simc_cut_all.GetXaxis().SetRangeUser(-0.1, 0.1)
+H_hsxpfp_pions_simc_cut_all.GetYaxis().CenterTitle()
+H_hsxpfp_pions_simc_cut_all.SetLineColor(ROOT.kRed)
+H_hsxpfp_pions_simc_cut_all.SetMarkerColor(ROOT.kRed)
+if H_hsxpfp_pions_simc_cut_all.GetMaximum() > H_dc_xp_fp_pions_normdummysub_data_cut_all.GetMaximum():
      H_hsxpfp_pions_simc_cut_all.Draw("E1")
      H_dc_xp_fp_pions_normdummysub_data_cut_all.Draw("E1same")
- else:
+else:
      H_dc_xp_fp_pions_normdummysub_data_cut_all.Draw("E1")
      H_hsxpfp_pions_simc_cut_all.Draw("E1same")
 # Legend for HMS XpFp Plot
@@ -2680,16 +2680,16 @@ H_dc_yp_fp_pions_normdummysub_data_cut_all.GetXaxis().SetRangeUser(-0.05, 0.05)
 H_dc_yp_fp_pions_normdummysub_data_cut_all.GetYaxis().CenterTitle()
 H_dc_yp_fp_pions_normdummysub_data_cut_all.SetLineColor(ROOT.kBlue)
 H_dc_yp_fp_pions_normdummysub_data_cut_all.SetMarkerColor(ROOT.kBlue)
- # Draw the histogram with the higher max first
- #H_hsypfp_pions_simc_cut_all.Scale(match_scale)
- H_hsypfp_pions_simc_cut_all.GetXaxis().SetRangeUser(-0.05, 0.05)
- H_hsypfp_pions_simc_cut_all.GetYaxis().CenterTitle()
- H_hsypfp_pions_simc_cut_all.SetLineColor(ROOT.kRed)
- H_hsypfp_pions_simc_cut_all.SetMarkerColor(ROOT.kRed)
- if H_hsypfp_pions_simc_cut_all.GetMaximum() > H_dc_yp_fp_pions_normdummysub_data_cut_all.GetMaximum():
+# Draw the histogram with the higher max first
+#H_hsypfp_pions_simc_cut_all.Scale(match_scale)
+H_hsypfp_pions_simc_cut_all.GetXaxis().SetRangeUser(-0.05, 0.05)
+H_hsypfp_pions_simc_cut_all.GetYaxis().CenterTitle()
+H_hsypfp_pions_simc_cut_all.SetLineColor(ROOT.kRed)
+H_hsypfp_pions_simc_cut_all.SetMarkerColor(ROOT.kRed)
+if H_hsypfp_pions_simc_cut_all.GetMaximum() > H_dc_yp_fp_pions_normdummysub_data_cut_all.GetMaximum():
      H_hsypfp_pions_simc_cut_all.Draw("E1")
      H_dc_yp_fp_pions_normdummysub_data_cut_all.Draw("E1same")
- else:
+else:
      H_dc_yp_fp_pions_normdummysub_data_cut_all.Draw("E1")
      H_hsypfp_pions_simc_cut_all.Draw("E1same")
 # Legend for HMS YpFp Plot
@@ -2706,16 +2706,16 @@ P_dc_x_fp_pions_normdummysub_data_cut_all.GetXaxis().SetRangeUser(-20, 20)
 P_dc_x_fp_pions_normdummysub_data_cut_all.GetYaxis().CenterTitle()
 P_dc_x_fp_pions_normdummysub_data_cut_all.SetLineColor(ROOT.kBlue)
 P_dc_x_fp_pions_normdummysub_data_cut_all.SetMarkerColor(ROOT.kBlue)
- # Draw the histogram with the higher max first
- #P_ssxfp_pions_simc_cut_all.Scale(match_scale)
- P_ssxfp_pions_simc_cut_all.GetXaxis().SetRangeUser(-20, 20)
- P_ssxfp_pions_simc_cut_all.GetYaxis().CenterTitle()
- P_ssxfp_pions_simc_cut_all.SetLineColor(ROOT.kRed)
- P_ssxfp_pions_simc_cut_all.SetMarkerColor(ROOT.kRed)
- if P_ssxfp_pions_simc_cut_all.GetMaximum() > P_dc_x_fp_pions_normdummysub_data_cut_all.GetMaximum():
+# Draw the histogram with the higher max first
+#P_ssxfp_pions_simc_cut_all.Scale(match_scale)
+P_ssxfp_pions_simc_cut_all.GetXaxis().SetRangeUser(-20, 20)
+P_ssxfp_pions_simc_cut_all.GetYaxis().CenterTitle()
+P_ssxfp_pions_simc_cut_all.SetLineColor(ROOT.kRed)
+P_ssxfp_pions_simc_cut_all.SetMarkerColor(ROOT.kRed)
+if P_ssxfp_pions_simc_cut_all.GetMaximum() > P_dc_x_fp_pions_normdummysub_data_cut_all.GetMaximum():
      P_ssxfp_pions_simc_cut_all.Draw("E1")
      P_dc_x_fp_pions_normdummysub_data_cut_all.Draw("E1same")
- else:
+else:
      P_dc_x_fp_pions_normdummysub_data_cut_all.Draw("E1")
      P_ssxfp_pions_simc_cut_all.Draw("E1same")
 # Legend for P Xfp Plot
@@ -2728,16 +2728,16 @@ P_dc_y_fp_pions_normdummysub_data_cut_all.GetXaxis().SetRangeUser(-30, 30)
 P_dc_y_fp_pions_normdummysub_data_cut_all.GetYaxis().CenterTitle()
 P_dc_y_fp_pions_normdummysub_data_cut_all.SetLineColor(ROOT.kBlue)
 P_dc_y_fp_pions_normdummysub_data_cut_all.SetMarkerColor(ROOT.kBlue)
- # Draw the histogram with the higher max first
- #P_ssyfp_pions_simc_cut_all.Scale(match_scale)
- P_ssyfp_pions_simc_cut_all.GetXaxis().SetRangeUser(-30, 30)
- P_ssyfp_pions_simc_cut_all.GetYaxis().CenterTitle()
- P_ssyfp_pions_simc_cut_all.SetLineColor(ROOT.kRed)
- P_ssyfp_pions_simc_cut_all.SetMarkerColor(ROOT.kRed)
- if P_ssyfp_pions_simc_cut_all.GetMaximum() > P_dc_y_fp_pions_normdummysub_data_cut_all.GetMaximum():
+# Draw the histogram with the higher max first
+#P_ssyfp_pions_simc_cut_all.Scale(match_scale)
+P_ssyfp_pions_simc_cut_all.GetXaxis().SetRangeUser(-30, 30)
+P_ssyfp_pions_simc_cut_all.GetYaxis().CenterTitle()
+P_ssyfp_pions_simc_cut_all.SetLineColor(ROOT.kRed)
+P_ssyfp_pions_simc_cut_all.SetMarkerColor(ROOT.kRed)
+if P_ssyfp_pions_simc_cut_all.GetMaximum() > P_dc_y_fp_pions_normdummysub_data_cut_all.GetMaximum():
      P_ssyfp_pions_simc_cut_all.Draw("E1")
      P_dc_y_fp_pions_normdummysub_data_cut_all.Draw("E1same")
- else:
+else:
      P_dc_y_fp_pions_normdummysub_data_cut_all.Draw("E1")
      P_ssyfp_pions_simc_cut_all.Draw("E1same")
 # Legend for P Yfp Plot
@@ -2750,16 +2750,16 @@ P_dc_xp_fp_pions_normdummysub_data_cut_all.GetXaxis().SetRangeUser(-0.1, 0.1)
 P_dc_xp_fp_pions_normdummysub_data_cut_all.GetYaxis().CenterTitle()
 P_dc_xp_fp_pions_normdummysub_data_cut_all.SetLineColor(ROOT.kBlue)
 P_dc_xp_fp_pions_normdummysub_data_cut_all.SetMarkerColor(ROOT.kBlue)
- # Draw the histogram with the higher max first
- #P_ssxpfp_pions_simc_cut_all.Scale(match_scale)
- P_ssxpfp_pions_simc_cut_all.GetXaxis().SetRangeUser(-0.1, 0.1)
- P_ssxpfp_pions_simc_cut_all.GetYaxis().CenterTitle()
- P_ssxpfp_pions_simc_cut_all.SetLineColor(ROOT.kRed)
- P_ssxpfp_pions_simc_cut_all.SetMarkerColor(ROOT.kRed)
- if P_ssxpfp_pions_simc_cut_all.GetMaximum() > P_dc_xp_fp_pions_normdummysub_data_cut_all.GetMaximum():
+# Draw the histogram with the higher max first
+#P_ssxpfp_pions_simc_cut_all.Scale(match_scale)
+P_ssxpfp_pions_simc_cut_all.GetXaxis().SetRangeUser(-0.1, 0.1)
+P_ssxpfp_pions_simc_cut_all.GetYaxis().CenterTitle()
+P_ssxpfp_pions_simc_cut_all.SetLineColor(ROOT.kRed)
+P_ssxpfp_pions_simc_cut_all.SetMarkerColor(ROOT.kRed)
+if P_ssxpfp_pions_simc_cut_all.GetMaximum() > P_dc_xp_fp_pions_normdummysub_data_cut_all.GetMaximum():
      P_ssxpfp_pions_simc_cut_all.Draw("E1")
      P_dc_xp_fp_pions_normdummysub_data_cut_all.Draw("E1same")
- else:
+else:
      P_dc_xp_fp_pions_normdummysub_data_cut_all.Draw("E1")
      P_ssxpfp_pions_simc_cut_all.Draw("E1same")
 # Legend for P XpFp Plot
@@ -2772,16 +2772,16 @@ P_dc_yp_fp_pions_normdummysub_data_cut_all.GetXaxis().SetRangeUser(-0.1, 0.1)
 P_dc_yp_fp_pions_normdummysub_data_cut_all.GetYaxis().CenterTitle()
 P_dc_yp_fp_pions_normdummysub_data_cut_all.SetLineColor(ROOT.kBlue)
 P_dc_yp_fp_pions_normdummysub_data_cut_all.SetMarkerColor(ROOT.kBlue)
- # Draw the histogram with the higher max first
- #P_ssypfp_pions_simc_cut_all.Scale(match_scale)
- P_ssypfp_pions_simc_cut_all.GetXaxis().SetRangeUser(-0.1, 0.1)
- P_ssypfp_pions_simc_cut_all.GetYaxis().CenterTitle()
- P_ssypfp_pions_simc_cut_all.SetLineColor(ROOT.kRed)
- P_ssypfp_pions_simc_cut_all.SetMarkerColor(ROOT.kRed)
- if P_ssypfp_pions_simc_cut_all.GetMaximum() > P_dc_yp_fp_pions_normdummysub_data_cut_all.GetMaximum():
+# Draw the histogram with the higher max first
+#P_ssypfp_pions_simc_cut_all.Scale(match_scale)
+P_ssypfp_pions_simc_cut_all.GetXaxis().SetRangeUser(-0.1, 0.1)
+P_ssypfp_pions_simc_cut_all.GetYaxis().CenterTitle()
+P_ssypfp_pions_simc_cut_all.SetLineColor(ROOT.kRed)
+P_ssypfp_pions_simc_cut_all.SetMarkerColor(ROOT.kRed)
+if P_ssypfp_pions_simc_cut_all.GetMaximum() > P_dc_yp_fp_pions_normdummysub_data_cut_all.GetMaximum():
      P_ssypfp_pions_simc_cut_all.Draw("E1")
      P_dc_yp_fp_pions_normdummysub_data_cut_all.Draw("E1same")
- else:
+else:
      P_dc_yp_fp_pions_normdummysub_data_cut_all.Draw("E1")
      P_ssypfp_pions_simc_cut_all.Draw("E1same")
 # Legend for P YpFp Plot
